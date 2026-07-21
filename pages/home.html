@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zesto - Fresh Grocery Delivered Fast</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Header Section -->
+    <header class="app-header">
+      <div class="delivery-bar">
+        <div class="delivery-info">
+          <span class="material-symbols-outlined location-icon">location_on</span>
+          <div class="address-text">
+            <span class="delivery-label">Delivering to</span>
+            <div class="address-select">
+              <span class="current-address">Agra, Uttar Pradesh</span>
+              <span class="material-symbols-outlined arrow-icon">keyboard_arrow_down</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-avatar">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Search 'atta', 'milk', 'mangoes'..." id="searchInput">
+        <button class="voice-search" aria-label="Voice Search">
+          <span class="material-symbols-outlined">mic</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Banner Carousel -->
+      <section class="banner-section">
+        <div class="banner-slider" id="bannerSlider">
+          <div class="banner-slide slide-1 active">
+            <div class="banner-content">
+              <span class="badge">Super Saver</span>
+              <h2>Fresh Fruits & Vegetables</h2>
+              <p>Up to 40% OFF on daily essentials</p>
+            </div>
+          </div>
+          <div class="banner-slide slide-2">
+            <div class="banner-content">
+              <span class="badge">Express 10 Min</span>
+              <h2>Dairy & Morning Fresh</h2>
+              <p>Get Pure Milk & Paneer Delivered</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="section">
+        <div class="section-header">
+          <h3>Shop by Category</h3>
+          <a href="#" class="see-all">See All</a>
+        </div>
+        <div class="category-grid">
+          <div class="category-card">
+            <div class="category-img icon-veg">🥬</div>
+            <span>Vegetables</span>
+          </div>
+          <div class="category-card">
+            <div class="category-img icon-fruit">🍎</div>
+            <span>Fruits</span>
+          </div>
+          <div class="category-card">
+            <div class="category-img icon-dairy">🥛</div>
+            <span>Dairy & Milk</span>
+          </div>
+          <div class="category-card">
+            <div class="category-img icon-staples">🌾</div>
+            <span>Atta & Rice</span>
+          </div>
+          <div class="category-card">
+            <div class="category-img icon-snack">🍫</div>
+            <span>Munchies</span>
+          </div>
+          <div class="category-card">
+            <div class="category-img icon-beverage">🧃</div>
+            <span>Drinks</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Today's Offers -->
+      <section class="section">
+        <div class="section-header">
+          <h3>Today's Deals 🔥</h3>
+          <a href="#" class="see-all">See All</a>
+        </div>
+        <div class="product-carousel">
+          
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <div class="product-img">🍌</div>
+            <div class="product-details">
+              <span class="weight">1 kg</span>
+              <h4 class="product-title">Fresh Robusta Banana</h4>
+              <div class="price-row">
+                <div class="prices">
+                  <span class="current-price">₹48</span>
+                  <span class="old-price">₹60</span>
+                </div>
+                <button class="add-btn" data-id="1" data-name="Fresh Robusta Banana" data-price="48">ADD</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <span class="discount-badge">15% OFF</span>
+            <div class="product-img">🥦</div>
+            <div class="product-details">
+              <span class="weight">500 g</span>
+              <h4 class="product-title">Fresh Broccoli</h4>
+              <div class="price-row">
+                <div class="prices">
+                  <span class="current-price">₹85</span>
+                  <span class="old-price">₹100</span>
+                </div>
+                <button class="add-btn" data-id="2" data-name="Fresh Broccoli" data-price="85">ADD</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <span class="discount-badge">10% OFF</span>
+            <div class="product-img">🧈</div>
+            <div class="product-details">
+              <span class="weight">500 g</span>
+              <h4 class="product-title">Amul Pasteurised Butter</h4>
+              <div class="price-row">
+                <div class="prices">
+                  <span class="current-price">₹275</span>
+                  <span class="old-price">₹290</span>
+                </div>
+                <button class="add-btn" data-id="3" data-name="Amul Pasteurised Butter" data-price="275">ADD</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Popular Products -->
+      <section class="section mb-large">
+        <div class="section-header">
+          <h3>Popular Staples</h3>
+          <a href="#" class="see-all">See All</a>
+        </div>
+        <div class="product-grid">
+          
+          <!-- Item 1 -->
+          <div class="product-card">
+            <div class="product-img">🥖</div>
+            <div class="product-details">
+              <span class="weight">5 kg</span>
+              <h4 class="product-title">Aashirvaad Shuddh Chakki Atta</h4>
+              <div class="price-row">
+                <div class="prices">
+                  <span class="current-price">₹245</span>
+                  <span class="old-price">₹270</span>
+                </div>
+                <button class="add-btn" data-id="4" data-name="Aashirvaad Whole Wheat Atta" data-price="245">ADD</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="product-card">
+            <div class="product-img">🍚</div>
+            <div class="product-details">
+              <span class="weight">1 kg</span>
+              <h4 class="product-title">Fortune Everyday Basmati Rice</h4>
+              <div class="price-row">
+                <div class="prices">
+                  <span class="current-price">₹115</span>
+                  <span class="old-price">₹130</span>
+                </div>
+                <button class="add-btn" data-id="5" data-name="Fortune Basmati Rice" data-price="115">ADD</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Floating Cart Bar (Appears when items are added) -->
+    <div class="floating-cart hidden" id="floatingCart">
+      <div class="cart-info">
+        <span class="cart-count" id="cartCount">0 ITEMS</span>
+        <span class="cart-total" id="cartTotal">₹0</span>
+      </div>
+      <button class="view-cart-btn">
+        <span>View Cart</span>
+        <span class="material-symbols-outlined">shopping_bag</span>
+      </button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active">
+        <span class="material-symbols-outlined">home</span>
+        <span>Home</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="material-symbols-outlined">grid_view</span>
+        <span>Categories</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="material-symbols-outlined">receipt_long</span>
+        <span>Orders</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span>Account</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
