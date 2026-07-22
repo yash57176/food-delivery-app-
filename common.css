@@ -1,0 +1,52 @@
+/* Google Fonts Import - Poppins & Material Symbols */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+:root {
+    /* Zesto Theme Colors */
+    --primary-green: #0C831F;
+    --primary-light: #E8F5E9;
+    --primary-dark: #075213;
+    --accent-yellow: #FFC107;
+    
+    /* Text Colors */
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+    --text-white: #FFFFFF;
+    
+    /* Backgrounds & Cards */
+    --bg-light: #F9FAFB;
+    --card-bg: #FFFFFF;
+    --border-color: #E5E7EB;
+    
+    /* Layout */
+    --max-app-width: 480px; /* Mobile First Shell */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #111827; /* Desktop View Dark Backdrop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Mobile App Container Shell for Web */
+.app-container {
+    width: 100%;
+    max-width: var(--max-app-width);
+    height: 100vh;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
